@@ -45,7 +45,9 @@ public class JdbcMain {
             rs = stmt.executeQuery("Select * From alumnat");
             rs.next();
             do { // ID dni nom cognoms data_naixement
-                System.out.println(rs.getInt("id") + " " + rs.getString("dni") + " " + rs.getString("nom") + " " + rs.getString("cognoms") +" "+rs.getDouble("matricula")+ " " + rs.getDate("data_naixement") + " " + rs.getString("familia_nombrosa"));
+                System.out.println(rs.getInt("id") + " " + rs.getString("dni") + " " + rs.getString("nom") + " " + rs.getString("cognoms")
+                        + " " + rs.getDouble("matricula") + " " + rs.getDate("data_naixement") + " " + rs.getString("familia_nombrosa")
+                        + " " + rs.getBoolean("mayor_edad"));
             } while (rs.next());
 
         } catch (SQLException ex) {
