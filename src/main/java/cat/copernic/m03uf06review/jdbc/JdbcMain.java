@@ -15,12 +15,12 @@ import java.util.logging.Logger;
 
 /**
  * En aquesta secció cal accedir a una taula de MySQL amb un camp de cada tipus:
- * 
+ *
  * int o long, double o float, boolean, char, String i java.sql.Date
- * 
+ *
  * Recòrrer el result set i mostrar-lo per la consola.
- * 
- * 
+ *
+ *
  * @author pep
  */
 public class JdbcMain {
@@ -30,7 +30,7 @@ public class JdbcMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-            String usuario = "root";
+        String usuario = "root";
         String clave = "root";
         String url = "jdbc:mysql://localhost:3306/institut";
         Connection con;
@@ -45,7 +45,7 @@ public class JdbcMain {
             rs = stmt.executeQuery("Select * From alumnat");
             rs.next();
             do { // ID dni nom cognoms data_naixement
-                System.out.println(rs.getInt("id")+" "+rs.getString("dni")+" "+rs.getString("nom") + " " + rs.getString("cognoms")+" "+rs.getDate("data_naixement"));
+                System.out.println(rs.getInt("id") + " " + rs.getString("dni") + " " + rs.getString("nom") + " " + rs.getString("cognoms") +" "+rs.getDouble("matricula")+ " " + rs.getDate("data_naixement") + " " + rs.getString("familia_nombrosa"));
             } while (rs.next());
 
         } catch (SQLException ex) {
