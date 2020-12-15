@@ -46,6 +46,6 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/institut?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
-    <mapping resource="cat/copernic/m03uf06review/pojos/Alumnat.hbm.xml"/>
+    <mapping resource="Alumnat.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

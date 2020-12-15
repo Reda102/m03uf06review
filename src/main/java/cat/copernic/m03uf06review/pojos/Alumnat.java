@@ -15,79 +15,81 @@ public class Alumnat  implements java.io.Serializable {
      private String nom;
      private String cognoms;
      private Double matricula;
-     private Date dataNaixement;
-     private Character familiaNombrosa;
+     private Date dataNaixement; 
      private Boolean mayorEdad;
 
     public Alumnat() {
     }
 
-    public Alumnat(String dni, String nom, String cognoms, Double matricula, Date dataNaixement, Character familiaNombrosa, Boolean mayorEdad) {
-       this.dni = dni;
-       this.nom = nom;
-       this.cognoms = cognoms;
-       this.matricula = matricula;
-       this.dataNaixement = dataNaixement;
-       this.familiaNombrosa = familiaNombrosa;
-       this.mayorEdad = mayorEdad;
+    public Alumnat(Integer id, String dni, String nom, String cognoms, Double matricula, Date dataNaixement, Boolean mayorEdad) {
+        this.id = id;
+        this.dni = dni;
+        this.nom = nom;
+        this.cognoms = cognoms;
+        this.matricula = matricula;
+        this.dataNaixement = dataNaixement;
+        this.mayorEdad = mayorEdad;
     }
+
    
+
     public Integer getId() {
-        return this.id;
+        return id;
     }
-    
+
     public void setId(Integer id) {
         this.id = id;
     }
+
     public String getDni() {
-        return this.dni;
+        return dni;
     }
-    
+
     public void setDni(String dni) {
         this.dni = dni;
     }
+
     public String getNom() {
-        return this.nom;
+        return nom;
     }
-    
+
     public void setNom(String nom) {
         this.nom = nom;
     }
+
     public String getCognoms() {
-        return this.cognoms;
+        return cognoms;
     }
-    
+
     public void setCognoms(String cognoms) {
         this.cognoms = cognoms;
     }
+
     public Double getMatricula() {
-        return this.matricula;
+        return matricula;
     }
-    
+
     public void setMatricula(Double matricula) {
         this.matricula = matricula;
     }
+
     public Date getDataNaixement() {
-        return this.dataNaixement;
+        return dataNaixement;
     }
-    
+
     public void setDataNaixement(Date dataNaixement) {
         this.dataNaixement = dataNaixement;
     }
-    public Character getFamiliaNombrosa() {
-        return this.familiaNombrosa;
-    }
-    
-    public void setFamiliaNombrosa(Character familiaNombrosa) {
-        this.familiaNombrosa = familiaNombrosa;
-    }
+
     public Boolean getMayorEdad() {
-        return this.mayorEdad;
+        return mayorEdad;
     }
-    
+
     public void setMayorEdad(Boolean mayorEdad) {
         this.mayorEdad = mayorEdad;
     }
+
+    
 
 
 

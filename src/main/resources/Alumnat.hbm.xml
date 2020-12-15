@@ -23,9 +23,6 @@
         <property name="dataNaixement" type="date">
             <column name="data_naixement" length="10" />
         </property>
-        <property name="familiaNombrosa" type="java.lang.Character">
-            <column name="familia_nombrosa" length="1" />
-        </property>
         <property name="mayorEdad" type="java.lang.Boolean">
             <column name="mayor_edad" />
         </property>

@@ -18,17 +18,15 @@ public class Registre {
     private String cognoms;
     private double matricula;
     private String data_naixement;
-    private String familia_nombrosa;
     private String mayor_edad;
 
-    public Registre(int id, String dni, String nom, String cognoms, double matricula, String data_naixement, String familia_nombrosa, String mayor_edad) {
+    public Registre(int id, String dni, String nom, String cognoms, double matricula, String data_naixement, String mayor_edad) {
         this.id = id;
         this.dni = dni;
         this.nom = nom;
         this.cognoms = cognoms;
         this.matricula = matricula;
         this.data_naixement = data_naixement;
-        this.familia_nombrosa = familia_nombrosa;
         this.mayor_edad = mayor_edad;
     }
 
@@ -80,14 +78,6 @@ public class Registre {
         this.data_naixement = data_naixement;
     }
 
-    public String getFamilia_nombrosa() {
-        return familia_nombrosa;
-    }
-
-    public void setFamilia_nombrosa(String familia_nombrosa) {
-        this.familia_nombrosa = familia_nombrosa;
-    }
-
     public String getMayor_edad() {
         return mayor_edad;
     }
@@ -98,20 +88,19 @@ public class Registre {
 
     @Override
     public String toString() {
-        return "Registre{" + "id=" + id + ", dni=" + dni + ", nom=" + nom + ", cognoms=" + cognoms + ", matricula=" + matricula + ", data_naixement=" + data_naixement + ", familia_nombrosa=" + familia_nombrosa + ", mayor_edad=" + mayor_edad + '}';
+        return "Registre{" + "id=" + id + ", dni=" + dni + ", nom=" + nom + ", cognoms=" + cognoms + ", matricula=" + matricula + ", data_naixement=" + data_naixement + ", mayor_edad=" + mayor_edad + '}';
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 19 * hash + this.id;
-        hash = 19 * hash + Objects.hashCode(this.dni);
-        hash = 19 * hash + Objects.hashCode(this.nom);
-        hash = 19 * hash + Objects.hashCode(this.cognoms);
-        hash = 19 * hash + (int) (Double.doubleToLongBits(this.matricula) ^ (Double.doubleToLongBits(this.matricula) >>> 32));
-        hash = 19 * hash + Objects.hashCode(this.data_naixement);
-        hash = 19 * hash + Objects.hashCode(this.familia_nombrosa);
-        hash = 19 * hash + Objects.hashCode(this.mayor_edad);
+        int hash = 7;
+        hash = 89 * hash + this.id;
+        hash = 89 * hash + Objects.hashCode(this.dni);
+        hash = 89 * hash + Objects.hashCode(this.nom);
+        hash = 89 * hash + Objects.hashCode(this.cognoms);
+        hash = 89 * hash + (int) (Double.doubleToLongBits(this.matricula) ^ (Double.doubleToLongBits(this.matricula) >>> 32));
+        hash = 89 * hash + Objects.hashCode(this.data_naixement);
+        hash = 89 * hash + Objects.hashCode(this.mayor_edad);
         return hash;
     }
 
@@ -145,13 +134,11 @@ public class Registre {
         if (!Objects.equals(this.data_naixement, other.data_naixement)) {
             return false;
         }
-        if (!Objects.equals(this.familia_nombrosa, other.familia_nombrosa)) {
-            return false;
-        }
         if (!Objects.equals(this.mayor_edad, other.mayor_edad)) {
             return false;
         }
         return true;
     }
     
+
 }

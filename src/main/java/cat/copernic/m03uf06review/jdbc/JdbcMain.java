@@ -46,8 +46,7 @@ public class JdbcMain {
             rs.next();
             do { // ID dni nom cognoms data_naixement
                 System.out.println("ID:"+rs.getInt("id") + " DNI: " + rs.getString("dni") + " NOM: " + rs.getString("nom") + " COGNOM: " + rs.getString("cognoms")
-                        + " MATRICULA: " + rs.getDouble("matricula") + " DATA NEIXAMENT: " + rs.getDate("data_naixement") + " FAMILIA NOMBROSA:  " + rs.getString("familia_nombrosa")
-                        + " MAYOR EDAD: " + rs.getBoolean("mayor_edad"));
+                        + " MATRICULA: " + rs.getDouble("matricula") + " DATA NEIXAMENT: " + rs.getDate("data_naixement") + " MAYOR EDAD: " + rs.getBoolean("mayor_edad"));
             } while (rs.next());
 
         } catch (SQLException ex) {

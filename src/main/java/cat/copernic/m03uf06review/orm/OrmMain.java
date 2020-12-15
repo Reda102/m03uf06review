@@ -48,7 +48,7 @@ public class OrmMain {
                 while (rs.next()) {
 
                     Registre r1 = new Registre(rs.getInt("id"), rs.getString("dni"), rs.getString("nom"), rs.getString("cognoms"),
-                            rs.getDouble("matricula"), rs.getString("data_naixement"), rs.getString("familia_nombrosa"), rs.getString("mayor_edad"));
+                            rs.getDouble("matricula"), rs.getString("data_naixement"), rs.getString("mayor_edad"));
 
                     nuevoRegistro(r1);
                 }
