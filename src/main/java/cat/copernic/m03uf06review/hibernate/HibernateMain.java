@@ -134,7 +134,7 @@ public class HibernateMain {
             List alumnat = session.createQuery("FROM Alumnat").list();
             for (Iterator iterator = alumnat.iterator(); iterator.hasNext();) {
                 Alumnat alumnats = (Alumnat) iterator.next();
-                System.out.println("DNI " + alumnats.getDni() + " Nom " + alumnats.getNom() + " Cognom " + alumnats.getCognoms() + " Matricula "
+                System.out.println("ID "+alumnats.getId()+" DNI " + alumnats.getDni() + " Nom " + alumnats.getNom() + " Cognom " + alumnats.getCognoms() + " Matricula "
                         + alumnats.getMatricula() + " Data Naixament " + alumnats.getDataNaixement()
                         + " Mayor Edad" + alumnats.getMayorEdad());
             }
