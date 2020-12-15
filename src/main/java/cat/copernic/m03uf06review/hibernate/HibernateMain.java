@@ -136,7 +136,7 @@ public class HibernateMain {
                 Alumnat alumnats = (Alumnat) iterator.next();
                 System.out.println("ID "+alumnats.getId()+" DNI " + alumnats.getDni() + " Nom " + alumnats.getNom() + " Cognom " + alumnats.getCognoms() + " Matricula "
                         + alumnats.getMatricula() + " Data Naixament " + alumnats.getDataNaixement()
-                        + " Mayor Edad" + alumnats.getMayorEdad());
+                        + " Mayor Edad " + alumnats.getMayorEdad());
             }
 
             tx.commit();
